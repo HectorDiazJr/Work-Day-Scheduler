@@ -12,5 +12,8 @@ $(document).ready(function() {
     // THEN the text for that event is saved in local storage
     // WHEN I refresh the page
     // THEN the saved events persist
-    
+    var schedule = [];
+    var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+    var Input = $(".container");
+    Input.append("<div>" + time + "</div>");
 });
