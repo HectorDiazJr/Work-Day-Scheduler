@@ -14,7 +14,7 @@ $(document).ready(function() {
     // THEN the text for that event is saved in local storage
     // WHEN I refresh the page
     // THEN the saved events persist
-    var schedule = [];
+    // var schedule = [];
     // get and display the time and date
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
     var currentDay = $("#currentDay");
@@ -25,20 +25,24 @@ $(document).ready(function() {
     //create a save button to go in each ul
     //use class saveBtn 
     //use class saveBtn i:hover when hovering over
-    ul.appendChild(button);
-    $(".time").appendChild(li);
+    // var button =documenet.createElement("button");
+    // button.textContent = "Save";
+    // ul.appendChild(button);
+    // $(".time").appendChild(li);
 
     //when save button is click, save task to local storage
     //use json to stringify stored items 
     //.setItem("text box", JSON.stringify)
 
     //use if statement to compare actual time of day with time block
-    //if past use class past
-    //if present use class present
-    //if future use class future
+    //if past use class past to style text box
+    //if present use class present to style text box
+    //if future use class future to style text box
 
     //get stored task from local storage
     //parse the json string to an object
     //JSON.parse(localStorage.getItem("place in the text box"))
+
+    //clear the text boxes with tasks each new day
 
 });

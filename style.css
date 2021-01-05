@@ -80,3 +80,7 @@ textarea{
   border-radius: 15px;
   margin-bottom: 20px
 };
+
+.input {
+  text-align:center;
+};
