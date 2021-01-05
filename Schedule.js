@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // GIVEN I am using a daily planner to create a schedule
     // WHEN I open the planner
-    // THEN the current day is displayed at the top of the calendar
+    // -THEN the current day is displayed at the top of the calendar
     //IF DAY MATCHES TODAYS DATE, DISPLAY CURRENT DAY TIME BLOCKS, AND CLEAR PREVIOUS DAY 
     // WHEN I scroll down
     // THEN I am presented with time blocks for standard business hours
@@ -15,7 +15,30 @@ $(document).ready(function() {
     // WHEN I refresh the page
     // THEN the saved events persist
     var schedule = [];
+    // get and display the time and date
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
-    var Input = $(".container");
-    Input.append("<div>" + time + "</div>");
+    var currentDay = $("#currentDay");
+    currentDay.text(time);
+
+    //make text field to allow user to input a task
+
+    //create a save button to go in each ul
+    //use class saveBtn 
+    //use class saveBtn i:hover when hovering over
+    ul.appendChild(button);
+    $(".time").appendChild(li);
+
+    //when save button is click, save task to local storage
+    //use json to stringify stored items 
+    //.setItem("text box", JSON.stringify)
+
+    //use if statement to compare actual time of day with time block
+    //if past use class past
+    //if present use class present
+    //if future use class future
+
+    //get stored task from local storage
+    //parse the json string to an object
+    //JSON.parse(localStorage.getItem("place in the text box"))
+
 });
