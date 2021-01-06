@@ -16,25 +16,25 @@ $(document).ready(function() {
     // THEN the saved events persist
     // var schedule = [];
     // get and display the time and date
+    var nineamEL = document.getElementById("nineam");
+
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
     var currentDay = $("#currentDay");
     currentDay.text(time);
 
-    //make text field to allow user to input a task
-
-    //create a save button to go in each ul
-    //use class saveBtn 
-    //use class saveBtn i:hover when hovering over
-    // var button =documenet.createElement("button");
-    // button.textContent = "Save";
-    // ul.appendChild(button);
-    // $(".time").appendChild(li);
-
+    //create a function to store tasks in local storage
+    function storeTasks() {
+        localStorage.setItem("#nineam", JSON.stringify(input));
+    }
+    console.log(nineamEl)
     //when save button is click, save task to local storage
     //use json to stringify stored items 
     //.setItem("text box", JSON.stringify)
 
     //use if statement to compare actual time of day with time block
+    //if ul < moment().format('h a') {
+    //     change the css to past
+    // }
     //if past use class past to style text box
     //if present use class present to style text box
     //if future use class future to style text box
