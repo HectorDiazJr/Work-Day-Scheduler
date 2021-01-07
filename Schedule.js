@@ -16,17 +16,29 @@ $(document).ready(function() {
     // THEN the saved events persist
     // var schedule = [];
     // get and display the time and date
+
+    $(".saveBtn").on("click",function() {
+        console.log("test2")
+    });
+
+
     var nineamEL = document.getElementById("nineam");
 
-    var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+    var time = moment().format('MMMM Do YYYY, h:mm:ss a')
     var currentDay = $("#currentDay");
     currentDay.text(time);
 
+    setInterval(function() {
+        time = moment().format('MMMM Do YYYY, h:mm:ss a')
+        currentDay.text(time);
+    },1000
+    );
     //create a function to store tasks in local storage
     function storeTasks() {
+        console.log("test this")
         localStorage.setItem("#nineam", JSON.stringify(input));
     }
-    console.log(nineamEl)
+    
     //when save button is click, save task to local storage
     //use json to stringify stored items 
     //.setItem("text box", JSON.stringify)
