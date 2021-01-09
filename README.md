@@ -1,22 +1,25 @@
 # Work-Day-Scheduler
 Creating a scheduler
+
 This project was about creating a scheduler.
 
-We needed to save the information to the local storage.
+We needed to save each task to the local storage.
 
 We needed to display it next time you open the site. 
 
-We needed to clear it the next day so we can add new days taks.
+We needed to clear it the next day so we can add new taks on a new day.
 
-We needed to add css to easily view past, present, and future slotsCreating a timed quiz
-This project was about creating a quiz.
+We needed to add css to easily view past, present, and future based on the hour.
 
+This was a especially difficult for me. I'm a little fuzzy with for loops, and there were a few required. I spent most of the time jumping around and going to something new when I would get frustad. I wasn't able to complete two items. 
 
+1. reseting everything and clearing the task based on a new day.
+2. saving tasks to the local storage wiht json stringify and bringing them back using json parse. I alo had a hard time keeping the information saved in the correct input field and brining it back in the correct input field, and combinging the corresponding save button with the correct field.
 
-
+If I can get some reading material or hints or advice on how to make these things happen, that would be great and very helpful. Thanks in advance.
 
 Below is a screen shot of the scheduler online
-![alt = screen shot of quiz](assets/Scheduler-screen-shot.png)
+![alt = screen shot of scheduler](assets/Scheduler-screen-shot.png)
 
 Below is a link to the repository 
 https://github.com/HectorDiazJr/Work-Day-Scheduler
@@ -24,32 +27,4 @@ https://github.com/HectorDiazJr/Work-Day-Scheduler
 Below is al link to the scheduler  
 https://hectordiazjr.github.io/Work-Day-Scheduler/
 
-We had to create this quiz from scratch.
-Created an HTML document, a css, and javascript.
-Originally titiled the html page as quiz.html. This was not working with git hub, to display the web page. I couldn't get that to work so I had to delete the repo and create a new one.
-I will have to remember to title each page as index.html
-I created 3 questions for the quiz, and gave a 20 second timer. Each wrong answer deletes two seconds and does not let you move forward until you have answered correctly. 
-The score and initials are stored in the local memory and also displayed on the screen.
 
-I did this by creating a series of functions
-
-a function to update the timer
-
-a function to start a timer. this function also resets the buttons, and asks for your initials to be saved. this leads to the function that handles the first question.
-
-each other question is also a separate function. these functions include "remove event listener functions 
-
-there is also a function to handle what happens when the correct answer is selected
-
-there is also a function to handle what happens when the incorrect answer is selected
-
-
-
-Below is a screen shot of the quiz online
-![alt = screen shot of quiz](assets/quizScreenShot.png)
-
-Below is a link to the repository 
-https://github.com/HectorDiazJr/Quiz
-
-Below is al link to the quiz 
-https://hectordiazjr.github.io/Quiz/
